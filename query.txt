@@ -1,0 +1,47 @@
+query:
+
+mutation{
+  createTodo(input: {text:"todo", userId:"1"}){
+    user{
+      id
+    }
+    text
+    done
+  }
+}
+
+query {
+  todos {
+    text
+    done
+    user {
+      name
+    }
+  }
+}
+
+res:
+{
+  "data": {
+    "createTodo": {
+      "user": {
+        "id": "1"
+      },
+      "text": "todo",
+      "done": false
+    }
+  }
+}
+{
+  "data": {
+    "todos": [
+      {
+        "text": "todo",
+        "done": false,
+        "user": {
+          "name": "user1"
+        }
+      }
+    ]
+  }
+}
