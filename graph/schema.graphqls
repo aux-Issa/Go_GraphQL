@@ -1,7 +1,10 @@
 # GraphQL schema example
 #
 # https://gqlgen.com/getting-started/
+# GraphQLのスキーマ定義ファイル. 実装者が好きに分割してもOK
+# APIエンドポイントとその型を管理している
 
+# type：基本のオブジェクトタイプ
 type Todo {
   id: ID!
   text: String!
@@ -14,15 +17,18 @@ type User {
   name: String!
 }
 
+# データフェッチ系のエンドポイント定義
 type Query {
   todos: [Todo!]!
 }
 
+# input: Mutation用のオブジェクト型の定義
 input NewTodo {
   text: String!
   userId: String!
 }
 
+# サーバーサイドのデータをアップデートする処理のエンドポイントを定義
 type Mutation {
   createTodo(input: NewTodo!): Todo!
 }
