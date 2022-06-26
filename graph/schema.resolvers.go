@@ -13,6 +13,7 @@ import (
 	"github.com/aux-Issa/Go_GraphQL/graph/model"
 )
 
+// reference:https://blog.y-yuki.net/entry/2017/05/05/000000
 // func(レシーバー) 関数名(引数)(戻り値の型)
 // 定義したメソッドは(レシーバー.メソッド)の形で呼び出すことができる
 // ex) mutationResolver構造体の構造体のインスタンスaに対してa.CreateTodo(ctx, input)を呼び出す
