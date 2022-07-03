@@ -1,5 +1,5 @@
 # Go_GraphQL
-## GrapphQL library
+## GraphQL library
 https://github.com/99designs/gqlgen
 ## Getting Started
 https://gqlgen.com/getting-started/
